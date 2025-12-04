@@ -8,3 +8,8 @@ class Item(NamedTuple):
 class Pharmacy(NamedTuple):
     name:str 
     items:list[list[Item]]
+
+class TaskResult(NamedTuple):
+    success : bool 
+    pharmacies : list[Pharmacy]
+    counter : int
